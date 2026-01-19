@@ -29,14 +29,10 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
 
     let args = Args::parse();
 
-    let secret_id = env::var("DNSPOD_SECRET_ID")
-        .map_err(|e| format!("从环境变量获取secret_id失败: {},请设置DNSPOD_SECRET_ID ", e))?;
-    let secret_key = env::var("DNSPOD_SECRET_KEY").map_err(|e| {
-        format!(
-            "从环境变量获取secret_key失败: {},请设置DNSPOD_SECRET_KEY ",
-            e
-        )
-    })?;
+    let secret_id = env::var("DP_Id")
+        .map_err(|e| format!("从环境变量获取secret_id失败: {},请设置DP_Id ", e))?;
+    let secret_key = env::var("DP_Key")
+        .map_err(|e| format!("从环境变量获取secret_key失败: {},请设置DP_Key ", e))?;
 
     let domain = args.domain;
     let version = "2021-03-23";

@@ -1,6 +1,16 @@
 [package]
-name = "dns-rs"
+name = "dns-record-changer-rs"
 version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+reqwest = {version="0.13.1",features=["json"]}
+tokio = {version = "1.49.0",features=["full"]}
+log = "0.4.29"
+env_logger="0.11.8"
+serde = {version= "1.0.228", features=["derive"]}
+serde_json = "1.0"
+sha2="0.10.9"
+hmac="0.12.1"
+chrono="0.4"
+clap = { version = "4.5.54", features = ["derive"] }

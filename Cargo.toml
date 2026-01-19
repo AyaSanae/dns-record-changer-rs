@@ -1,5 +1,5 @@
 [package]
-name = "dns-record-changer-rs"
+name = "dns_record_changer_rs"
 version = "0.1.0"
 edition = "2024"
 

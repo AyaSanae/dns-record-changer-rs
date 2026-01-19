@@ -313,7 +313,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "dns-rs"
+name = "dns_record_changer_rs"
 version = "0.1.0"
 dependencies = [
  "chrono",

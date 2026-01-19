@@ -3,8 +3,8 @@ use std::time::Duration;
 use std::{env, net::Ipv6Addr};
 
 use clap::Parser;
-use dns_rs::TencentCloudClient;
-use dns_rs::response::deserialize_describe_record_list_response;
+use dns_record_changer_rs::TencentCloudClient;
+use dns_record_changer_rs::response::deserialize_describe_record_list_response;
 use serde_json::json;
 use tokio::time;
 
